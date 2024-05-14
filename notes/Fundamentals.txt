@@ -37,3 +37,71 @@ SELECT:
 
             ******************
 
+SELECT DISTINCT
+    Allows users to get the distinct values from the table.
+
+    Syntax:
+    SELECT DISTINCT column_name
+    FROM table_name;
+
+    Examples:
+
+    SELECT DISTINCT release_year
+    FROM film;
+    or
+    SELECT DISTINCT (release_year)
+    FROM film;
+
+    SELECT DISTINCT rental_rate
+    FROM film;
+
+            ******************
+
+COUNT
+    Returns number of input rows that match a specific condition of a query.
+    We can pass COUNT on a specific column or just pass COUNT(*)
+    parenthesis is needed, it will not work without it.
+
+    Syntax:
+    SELECT COUNT(column_name)
+    FROM table_name;
+
+    Example:
+    SELECT COUNT(name)
+    FROM table_1;
+
+    How many unique names are there in a table:
+    SELECT COUNT (DISTINCT (name))
+    FROM table_1;
+
+            ******************
+
+SELECT WHERE:
+    WHERE statement allows us to specify the conditions on columns to get the desired rows.
+
+    Syntax:
+    SELECT column_names
+    FROM table_name
+    WHERE conditions
+
+    COMPARISON operators:
+        compare a value with something:
+            is price >= 3$
+            is the pet name "sam"
+
+    LOGICAL operators:
+        Allows us to combine multiple comparison operators.
+        AND, OR and NOT
+
+    Example:
+    1. get the name and age of people named "David"
+    SELECT name, age
+    FROM table_1
+    WHERE name = 'David';
+
+    2. get name and age of people named "David" who are at least 40 years old
+    SELECT name, age
+    FROM table_1
+    Where name = 'David' AND age >= 40;
+
+
