@@ -1,0 +1,39 @@
+SQL is the programming language used to communicate with our database.
+
+What are databases?
+
+    Databases are systems that allows us to store and organize data.
+    They are useful when dealing with large amount of data.
+
+            ******************
+
+Spreadsheets Vs Databases
+
+    Spreadsheets:
+        one-time analysis
+        quickly need to chart something
+        reasonable dataset size
+
+    Databases:
+        Data Integrity (users not able to just click on a cell and change data)
+        Handle massive amounts of data
+        Quickly combine different datasets
+        Automate steps for re-use
+        can support data for websites and applications
+
+            ******************
+
+SELECT:
+    Allows users to retrieve information from a table.
+
+    Syntax:
+    SELECT column_name
+    FROM table_name
+
+    Example:
+    SELECT c1 FROM table_1
+    SELECT c1, c2 FROM table_1  (multiple columns)
+    SELECT * FROM table_1   (all the columns from the table - not recommended)
+
+            ******************
+
