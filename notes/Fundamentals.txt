@@ -104,4 +104,4 @@ SELECT WHERE:
     FROM table_1
     Where name = 'David' AND age >= 40;
 
-
+            ******************
